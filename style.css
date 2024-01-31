@@ -1,0 +1,297 @@
+:root {
+    --green : #54E6AF;
+    --darkGray : #2C344B;
+    --black : #121725;
+    --lightGray : #5A668A;
+    --darkWhite : #C2CBE5;
+}
+input,textarea{
+    width:100%;
+    display:block}
+*{margin: 0;
+    padding: 0;}
+body {
+    position: relative;
+    background-color: var(--black);
+    font-family: "Chivo", sans-serif;
+}
+nav {
+    padding: 62px 0 57px 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+.background-image-mobile {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    filter: grayscale();
+    opacity: 0.15;
+}
+.background-image-tablet {
+    display: none;
+}
+.background-image-desktop {
+    display: none;
+}
+h1 {
+    color: var(--green);
+    font-weight: lighter;
+    font-size: 26px;
+    text-align: center;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+main {
+    width: 327px;
+    margin : 0 auto 0 auto;
+}
+h1 > span {
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: var(--darkWhite);
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 33px;
+}
+.container-logos-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+.container-logos-mobile > img {
+    height: 17px;
+}
+.container-logos-mobile #logo-google-podcast {
+    height: 11px;
+}
+.container-logos-mobile #logo-pocketcasts {
+    height: 15px;
+}
+.container-logos-tablet {
+    display: none;
+}
+form {
+    width: inherit;
+}
+form > input {
+    width: 263px;
+    padding: 9px 32px;
+    border-radius: 28px;
+    border: none;
+    background-color: var(--darkGray);
+    color: white;
+    margin-bottom: 16px;
+}
+form > button {
+    width: 100%;
+    padding: 9px 0;
+    border-radius: 28px;
+    border: none;
+    background-color: var(--green);
+    font-family: "chivo", sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 400;
+}
+.bottom-dots {
+    display: none;
+}
+@media (min-width:768px) {
+    body {
+        position: relative;
+        background-color: var(--black);
+        font-family: "Chivo", sans-serif;
+    }
+    nav {
+        padding: 62px 40px 57px 40px;
+        margin-left: auto;
+        display: flex;
+        justify-content: start;
+    }
+    .background-image-mobile {
+        display: none;
+    }
+    .background-image-tablet {
+        display: block;
+        height: 742px;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+    }
+    h1 {
+        font-size: 48px;
+        text-align: left;
+        line-height: 56px;
+        margin-bottom: 31px;
+    }
+    main {
+        width: 635px;
+        margin : 87px auto 0 40px;
+        padding-top: 93px;
+
+        background-color: var(--black);
+    }
+    p {
+        text-align: left;
+        width: 445px;
+        color: var(--darkWhite);
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 40px;
+    }
+    .container-logos-mobile {
+        display: none
+    }
+    form {
+        display: flex;
+        margin-bottom: 64px;
+    }
+    form > input {
+        width: 427px;
+        padding: 14px 32px;
+        border-radius: 28px;
+        border: none;
+        background-color: var(--darkGray);
+        color: white;
+        margin-bottom: 0;
+    }
+    form > button {
+        width: 162px;
+        padding: 14px 0;
+        margin: 5px 0;
+        background-color: var(--green);
+        font-family: "chivo", sans-serif;
+        font-size: 14px;
+        color: var(--black);
+        font-weight: 400;
+        position: relative;
+        left: -162px;
+    }
+    .container-logos-tablet {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 153px;
+    }
+    .container-logos-tablet > img {
+        height: 29px;
+    }
+    .container-logos-tablet #logo-google-podcast {
+        height: 18px;
+    }
+    .container-logos-tablet #logo-pocketcasts {
+        height: 26px;
+    }
+    .bottom-dots {
+        display: block;
+    }
+}
+@media (min-width:1440px) {
+    nav {
+        padding: 104px 0px 0px 165px;
+    }
+    .background-image-tablet {
+        display: none
+    }
+    .background-image-desktop {
+        display: block;
+        height: 640px;
+        position: absolute;
+        z-index: -1;
+        top: 130px;
+        right: 0;
+    }
+    h1 {
+        font-size: 52px;
+        text-align: left;
+        line-height: 62px;
+        margin-bottom: 24px;
+    }
+    main {
+        width: 723px;
+        margin : 103px auto 0 165px;
+        padding-top: 88px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    form {
+        display: flex;
+        margin-bottom: 64px;
+    }
+    form > input {
+        width: 427px;
+        padding: 14px 32px;
+        border-radius: 28px;
+        border: none;
+        background-color: var(--darkGray);
+        color: white;
+        margin-bottom: 0;
+    }
+    form > button {
+        width: 162px;
+        padding: 14px 0;
+        margin: 5px 0;
+        background-color: var(--green);
+        font-family: "chivo", sans-serif;
+        font-size: 14px;
+        color: var(--black);
+        font-weight: 400;
+        position: relative;
+        left: -167px;
+    }
+    .container-logos-tablet {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 130px;
+    }
+    .container-logos-tablet > img {
+        height: 29px;
+    }
+    .container-logos-tablet #logo-google-podcast {
+        height: 18px;
+    }
+    .container-logos-tablet #logo-pocketcasts {
+        height: 26px;
+    }
+    .bottom-dots {
+        position: absolute;
+        bottom: -51px;
+        right: 0;
+    }
+}
+@media (min-width:1700px) {
+    nav {
+        padding: 104px 0px 0px 300px;
+    }
+    .background-image-desktop {
+        display: block;
+        height: 640px;
+        position: absolute;
+        z-index: -1;
+        top: 130px;
+        right: 150px;
+    }
+    main {
+        width: 723px;
+        margin : 103px auto 0 300px;
+        padding-top: 88px;
+    }
+    .bottom-dots {
+        position: absolute;
+        bottom: -51px;
+        right: 150px;
+    }
+}
