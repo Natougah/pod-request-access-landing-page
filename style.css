@@ -105,6 +105,10 @@ form > button {
 .bottom-dots {
     display: none;
 }
+span {
+    padding-top: 2px;
+    color: #FB3E3E;
+}
 @media (min-width:768px) {
     body {
         position: relative;
@@ -157,6 +161,7 @@ form > button {
         margin-bottom: 64px;
     }
     form > input {
+        display: block;
         width: 427px;
         padding: 14px 32px;
         border-radius: 28px;
@@ -269,7 +274,7 @@ form > button {
     .bottom-dots {
         position: absolute;
         bottom: -51px;
-        right: 0;
+        right: 4px;
     }
 }
 @media (min-width:1700px) {
